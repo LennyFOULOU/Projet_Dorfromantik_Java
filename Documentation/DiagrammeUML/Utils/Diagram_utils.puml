@@ -1,0 +1,84 @@
+@startuml utils
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Database {
+  + Database(): 
+  - database: Connection
+  + addScore(long, int): void
+  + getSeedBySeriesId(long): long
+  + countSeriesByDateRange(Date, Date, boolean): int
+  + getSeriesByDateRange(Date, Date): List<String>
+  + getScoresBySeriesId(long): List<Integer>
+  + getAllScores(long): List<PlayerScore>
+  + getSeriesByDateRangePaginated(Date, Date, int, int, boolean): List<String>
+  + addCustomSeed(long): void
+  + close(): void
+  + getSeedByName(String): long
+   database: Connection
+   topPlayers: List<PlayerScore>
+   allSeries: List<String>
+}
+class FontLoader {
+  + FontLoader(): 
+  + loadFont(Fonts): Font
+}
+class FontManager {
+  + FontManager(): 
+  - buttonFont: Font
+  - titleFont: Font
+  + getTitleFont(float): Font
+  + loadCustomFont(Fonts): void
+  + getAdjustedTitleFont(Component, float, float): Font
+  + getAdjustedButtonFont(Component, float, float): Font
+  + getButtonFont(float): Font
+   buttonFont: Font
+   titleFont: Font
+}
+class Hexagon {
+  + Hexagon(int, int, int): 
+  + Hexagon(Point, int): 
+  + Hexagon(Point, int, double): 
+  + Hexagon(int, int, int, double): 
+  - calculateAngle(int, double): double
+}
+class HexagonDrawer {
+  + HexagonDrawer(Tile): 
+  + drawHexagon(Graphics2D, double, Point): void
+  - drawHexagonRow(Graphics2D, double, double, double, int): void
+}
+class ImageLoader {
+  + ImageLoader(): 
+  + loadImage(String): Image?
+}
+class MusicPlayer {
+  + MusicPlayer(): 
+  - soundClip: Clip
+  - musicClip: Clip
+  + loadMusic(Musics): void
+  + playSound(): void
+  + pauseMusic(): void
+  + loadSound(Sounds): void
+  + setVolume(Clip, int): void
+  + playMusic(): void
+  + stopMusic(): void
+   playingSound: boolean
+   soundClip: Clip
+   playingMusic: boolean
+   musicClip: Clip
+}
+class PlayerScore {
+  + PlayerScore(String, int): 
+  - score: int
+   serieName: String
+   score: int
+}
+class SoundLoader {
+  + SoundLoader(): 
+  + loadMusic(String): Clip?
+}
+
+Database       -[#595959,dashed]->  PlayerScore   : "«create»"
+HexagonDrawer  -[#595959,dashed]->  Hexagon       : "«create»"
+@enduml

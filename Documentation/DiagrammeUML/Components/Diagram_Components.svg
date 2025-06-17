@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="516pt" height="100pt" viewBox="0.00 0.00 515.94 100.20">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 96.2)">
+<title>package</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-96.2 511.94,-96.2 511.94,4 -4,4"/>
+<!-- Button -->
+<g id="node1" class="node">
+<title>Button</title>
+<polygon fill="none" stroke="black" points="0,-0.5 0,-91.7 302.3,-91.7 302.3,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="151.15" y="-75.1" font-family="Times,serif" font-size="14.00">Button</text>
+<polyline fill="none" stroke="black" points="0,-66.9 302.3,-66.9"/>
+<text text-anchor="start" x="8" y="-50.3" font-family="Times,serif" font-size="14.00">+ Button() : </text>
+<polyline fill="none" stroke="black" points="0,-42.1 302.3,-42.1"/>
+<text text-anchor="start" x="8" y="-25.5" font-family="Times,serif" font-size="14.00">+ createCustomIconButton(String) : JButton</text>
+<text text-anchor="start" x="8" y="-8.7" font-family="Times,serif" font-size="14.00"> + createCustomTextButton(String, float) : JButton</text>
+</g>
+<!-- Title -->
+<g id="node2" class="node">
+<title>Title</title>
+<polygon fill="none" stroke="black" points="320.36,-0.5 320.36,-91.7 507.94,-91.7 507.94,-0.5 320.36,-0.5"/>
+<text text-anchor="middle" x="414.15" y="-75.1" font-family="Times,serif" font-size="14.00">Title</text>
+<polyline fill="none" stroke="black" points="320.36,-66.9 507.94,-66.9"/>
+<text text-anchor="start" x="328.36" y="-50.3" font-family="Times,serif" font-size="14.00">+ Title(String, float) : </text>
+<text text-anchor="start" x="328.36" y="-33.5" font-family="Times,serif" font-size="14.00"> + Title(String, float, Color) : </text>
+<polyline fill="none" stroke="black" points="320.36,-25.3 507.94,-25.3"/>
+<text text-anchor="start" x="328.36" y="-8.7" font-family="Times,serif" font-size="14.00">+ updateTitleFont(float) : void</text>
+</g>
+</g>
+</svg>

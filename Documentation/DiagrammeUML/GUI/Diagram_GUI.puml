@@ -1,0 +1,141 @@
+@startuml gui
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class BarChartPanel {
+  + BarChartPanel(List<Integer>, int, JPanel): 
+  # paintComponent(Graphics): void
+}
+class ButtonHoverAnimator {
+  + ButtonHoverAnimator(JButton): 
+  + startAnimation(boolean): void
+  + updateOriginalFont(float): void
+}
+class ButtonPanel {
+  + ButtonPanel(float): 
+  - howToPlayButton: JButton
+  - exitButton: JButton
+  - newGameButton: JButton
+  - settingsButton: JButton
+  + updateButtonFonts(int): void
+   howToPlayButton: JButton
+   exitButton: JButton
+   buttons: List<JButton>
+   settingsButton: JButton
+   newGameButton: JButton
+}
+class GameControlsMenu {
+  + GameControlsMenu(): 
+  - createPanel(String, String): JPanel
+  - loadIcon(String): ImageIcon
+  - createPanelWithMultipleIcons(String, String[]): JPanel
+  + toggleVisibility(): void
+   controlsMenuVisible: boolean
+}
+class GameModeSelectionPanel {
+  + GameModeSelectionPanel(ActionListener, JFrame, MainMenu): 
+  - currentPage: int
+  - createTopPanel(JFrame, MainMenu): JPanel
+  - createDateFilterPanel(): JPanel
+  - createSeedPanel(ActionListener): JPanel
+  - stylizeDateSpinner(JSpinner): void
+  - createPaginationPanel(): JPanel
+  - createReturnButtonWithIcon(JFrame, MainMenu): JButton
+  - createGameModeButton(String, ActionListener): JButton
+  + loadSeriesForCurrentPage(): void
+  - createMainPanel(): JPanel
+  - updatePageLabelAndButtons(int, int): void
+  - createGridBagConstraints(int, int, int): GridBagConstraints
+   longSeed: long
+   currentPage: int
+   stringSeed: String
+}
+class GameOver {
+  + GameOver(JFrame, int, Database, MainMenu): 
+  - getFunnyQuote(int): String
+  - scoreInGroup(List<Integer>, int, int, int): boolean
+}
+class Leaderboard {
+  + Leaderboard(): 
+  + refresh(): void
+}
+class LeaderboardBarChartPanel {
+  + LeaderboardBarChartPanel(int, int): 
+  # paintComponent(Graphics): void
+}
+class LeaderboardByTier {
+  + LeaderboardByTier(): 
+  + refresh(): void
+}
+class LeaderboardWorldWide {
+  + LeaderboardWorldWide(): 
+  - createPlayerPanel(String, int, int): JPanel
+  - createTopPlayerPanel(String, int, String, boolean): JPanel
+  - resizeIcon(String, int, int): ImageIcon
+  + refresh(): void
+}
+class MainMenu {
+  + MainMenu(): 
+  - titleLabel: Title
+  - buttonPanel: ButtonPanel
+   titleLabel: Title
+   buttonPanel: ButtonPanel
+}
+class Reward {
+  + Reward(String, String, boolean, ImageIcon): 
+  - description: String
+  - isUnlocked: boolean
+  - icon: ImageIcon
+  - name: String
+   name: String
+   icon: ImageIcon
+   description: String
+   isUnlocked: boolean
+}
+class SettingsPanel {
+  + SettingsPanel(MainMenu, JFrame): 
+  - initializeSettingsFrame(): void
+  - createReturnButtonWithIcon(): JButton
+  - setupBackground(): void
+  - createSliderPanel(JSlider): JPanel
+  - createSoundPanel(String, JSlider, ChangeListener, MuteCheckBoxListener): JPanel
+  - setupMainPanel(): void
+  - setupTopPanel(): void
+  - createGridBagConstraints(int, int, int): GridBagConstraints
+  # paintComponent(Graphics): void
+  - createAutoFocusPanel(): JPanel
+   returnButtonVisible: boolean
+}
+class Step {
+  + Step(String, String, String): 
+  - title: String
+  - imagePath: String
+  - text: String
+   text: String
+   imagePath: String
+   title: String
+}
+class TutorialPanel {
+  + TutorialPanel(List<Step>, MainMenu, JFrame): 
+  - updateStepDisplay(): void
+  - styleButton(JButton): void
+  - createReturnButtonWithIcon(): JButton
+  - showPreviousStep(): void
+  - addLineBreaks(String, int): String
+  # paintComponent(Graphics): void
+  - showNextStep(): void
+}
+
+GameOver                  -[#595959,dashed]->  BarChartPanel            : "«create»"
+LeaderboardByTier         -[#000082,plain]-^  Leaderboard              
+LeaderboardByTier         -[#595959,dashed]->  LeaderboardBarChartPanel : "«create»"
+LeaderboardWorldWide      -[#000082,plain]-^  Leaderboard              
+MainMenu                 "1" *-[#595959,plain]-> "buttonPanel\n1" ButtonPanel              
+MainMenu                  -[#595959,dashed]->  ButtonPanel              : "«create»"
+MainMenu                 "1" *-[#595959,plain]-> "currentLeaderboard\n1" Leaderboard              
+MainMenu                  -[#595959,dashed]->  LeaderboardWorldWide     : "«create»"
+SettingsPanel            "1" *-[#595959,plain]-> "mainMenu\n1" MainMenu                 
+TutorialPanel            "1" *-[#595959,plain]-> "mainMenu\n1" MainMenu                 
+TutorialPanel            "1" *-[#595959,plain]-> "steps\n*" Step
+@enduml

@@ -1,0 +1,59 @@
+@startuml controller
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class ButtonHoverAnimationListener {
+  + ButtonHoverAnimationListener(boolean, JButton, Color, Font): 
+  + actionPerformed(ActionEvent): void
+}
+class ButtonHoverListener {
+  + ButtonHoverListener(ButtonHoverAnimator): 
+  + mouseEntered(MouseEvent): void
+  + mouseExited(MouseEvent): void
+}
+class GameModeController {
+  + GameModeController(JFrame, MainMenu, JFrame): 
+  - gameModeSelectionPanel: GameModeSelectionPanel
+  - isDynamicSeries(String): boolean
+  - addCustomSeedToDatabase(long): void
+  - getSeedFromDatabaseByName(String): long
+  + actionPerformed(ActionEvent): void
+  - startGame(long): void
+   gameModeBoard: Board
+   gameModeSelectionPanel: GameModeSelectionPanel
+}
+class MainMenuButtonController {
+  + MainMenuButtonController(MainMenu, JFrame, JFrame, JFrame, JFrame): 
+  - adjustFrameDisplay(JFrame): void
+  + actionPerformed(ActionEvent): void
+  - openSettings(): void
+  + startNewGame(): void
+  + showHowToPlay(): void
+  - configureFrame(JFrame): void
+  - exitGame(): void
+}
+class MainMenuMouseController {
+  + MainMenuMouseController(ButtonPanel): 
+  - initMouseListeners(): void
+  - addButtonHoverListener(JButton): void
+}
+class MainMenuResizeController {
+  + MainMenuResizeController(MainMenu): 
+  - addComponentListener(): void
+}
+class MainMenuResizeHandler {
+  + MainMenuResizeHandler(MainMenu): 
+  + componentResized(ComponentEvent): void
+}
+class TutorialController {
+  + TutorialController(MainMenu, JFrame): 
+  - tutorialPanel: TutorialPanel
+   tutorialPanel: JPanel
+}
+
+MainMenuMouseController       -[#595959,dashed]->  ButtonHoverListener          : "«create»"
+MainMenuResizeController     "1" *-[#595959,plain]-> "resizeHandler\n1" MainMenuResizeHandler        
+MainMenuResizeController      -[#595959,dashed]->  MainMenuResizeHandler        : "«create»"
+@enduml

@@ -1,0 +1,109 @@
+@startuml listeners
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class CloseButtonListener {
+  + CloseButtonListener(MainMenu, JFrame): 
+  + actionPerformed(ActionEvent): void
+}
+class CloseWindowListener {
+  + CloseWindowListener(MainMenu, JFrame): 
+  + windowClosing(WindowEvent): void
+}
+class EscapeMenuCloseListener {
+  + EscapeMenuCloseListener(): 
+  + windowClosing(WindowEvent): void
+}
+class GameArrowKeyListener {
+  + GameArrowKeyListener(Board): 
+  + keyPressed(KeyEvent): void
+}
+class GameMainMenuButtonListener {
+  + GameMainMenuButtonListener(JFrame): 
+  + actionPerformed(ActionEvent): void
+}
+class GameModeFilterButtonActionListener {
+  + GameModeFilterButtonActionListener(GameModeSelectionPanel): 
+  + actionPerformed(ActionEvent): void
+}
+class GameModeHoverEffectMouseListener {
+  + GameModeHoverEffectMouseListener(Color, Color, Color): 
+  + mouseExited(MouseEvent): void
+  + mousePressed(MouseEvent): void
+  + mouseReleased(MouseEvent): void
+  + mouseEntered(MouseEvent): void
+}
+class GameModeNextButtonActionListener {
+  + GameModeNextButtonActionListener(GameModeSelectionPanel): 
+  + actionPerformed(ActionEvent): void
+}
+class GameModePrevButtonActionListener {
+  + GameModePrevButtonActionListener(GameModeSelectionPanel): 
+  + actionPerformed(ActionEvent): void
+}
+class GameMouseClickListener {
+  + GameMouseClickListener(Board): 
+  + mousePressed(MouseEvent): void
+}
+class GameMouseWheelListener {
+  + GameMouseWheelListener(Board): 
+  + mouseWheelMoved(MouseWheelEvent): void
+}
+class GameQuitButtonListener {
+  + GameQuitButtonListener(): 
+  + actionPerformed(ActionEvent): void
+}
+class GameResumeButtonListener {
+  + GameResumeButtonListener(EscapeMenu): 
+  + actionPerformed(ActionEvent): void
+}
+class GameSettingsButtonListener {
+  + GameSettingsButtonListener(JFrame, EscapeMenu): 
+  + actionPerformed(ActionEvent): void
+}
+class GameSettingsWindowListener {
+  + GameSettingsWindowListener(JFrame): 
+  + windowIconified(WindowEvent): void
+  + windowDeactivated(WindowEvent): void
+  + windowDeiconified(WindowEvent): void
+  + windowOpened(WindowEvent): void
+  + windowClosing(WindowEvent): void
+  + windowClosed(WindowEvent): void
+  + windowActivated(WindowEvent): void
+}
+class GameSpaceKeyListener {
+  + GameSpaceKeyListener(Board): 
+  + keyPressed(KeyEvent): void
+}
+class GameZoomListener {
+  + GameZoomListener(Board): 
+  + mouseWheelMoved(MouseWheelEvent): void
+}
+class MusicVolumeChangeListener {
+  + MusicVolumeChangeListener(JSlider): 
+  + stateChanged(ChangeEvent): void
+}
+class MuteCheckBoxListener {
+  + MuteCheckBoxListener(String): 
+  + actionPerformed(ActionEvent): void
+}
+class SoundsVolumeChangeListener {
+  + SoundsVolumeChangeListener(JSlider): 
+  + stateChanged(ChangeEvent): void
+}
+class TilePanningActionListener {
+  + TilePanningActionListener(Board, int, int, int): 
+  - stopAnimation(): void
+  + actionPerformed(ActionEvent): void
+  + startAnimation(): void
+}
+class TutorialButtonHoverListener {
+  + TutorialButtonHoverListener(JButton, Color, Color): 
+  + mouseEntered(MouseEvent): void
+  + mouseExited(MouseEvent): void
+}
+
+GameSettingsButtonListener          -[#595959,dashed]->  GameSettingsWindowListener         : "«create»"
+@enduml

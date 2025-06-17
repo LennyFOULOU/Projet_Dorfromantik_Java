@@ -1,0 +1,45 @@
+@startuml enums
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+enum Biome << enumeration >> {
+  + Biome(): 
+  + values(): Biome[]
+  + valueOf(String): Biome
+   biomeColors: Color[]
+}
+enum Fonts << enumeration >> {
+  + Fonts(): 
+  + getFont(float): Font
+  + valueOf(String): Fonts
+  + values(): Fonts[]
+   fontPath: String
+}
+enum Images << enumeration >> {
+  + Images(): 
+  + values(): Images[]
+  + valueOf(String): Images
+   imagePath: String
+}
+enum Musics << enumeration >> {
+  + Musics(): 
+  + values(): Musics[]
+  + valueOf(String): Musics
+   soundsPath: String
+}
+enum Sounds << enumeration >> {
+  + Sounds(): 
+  + values(): Sounds[]
+  + valueOf(String): Sounds
+   soundsPath: String
+}
+enum TileOrientation << enumeration >> {
+  + TileOrientation(): 
+  + oppositeOrientation(): TileOrientation
+  + valueOf(String): TileOrientation
+  + values(): TileOrientation[]
+}
+
+@enduml

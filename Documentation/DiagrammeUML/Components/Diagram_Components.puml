@@ -1,0 +1,18 @@
+@startuml components
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Button {
+  + Button(): 
+  + createCustomIconButton(String): JButton
+  + createCustomTextButton(String, float): JButton
+}
+class Title {
+  + Title(String, float): 
+  + Title(String, float, Color): 
+  + updateTitleFont(float): void
+}
+
+@enduml

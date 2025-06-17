@@ -1,0 +1,136 @@
+@startuml game
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Board {
+  - offsetX: int
+  - random: Random
+  - zoomFactor: double
+  - game: Game
+  - nextTile: Tile
+  - offsetY: int
+  - controlsMenu: GameControlsMenu
+  + handleSpaceKeyPress(): void
+  + zoomIn(): void
+  + moveBoard(int, int): void
+  + zoomOut(): void
+  - initializeNextTile(): void
+  - calculateAvailablePositions(Tile): void
+  + handleMouseMove(MouseEvent): void
+  - isTileAtPosition(Point): boolean
+  + handleMouseClick(MouseEvent): void
+  + paintComponent(Graphics): void
+  + autoReFocus(Tile): void
+  + getTileAt(int, int): Tile
+  - initializeCentralTile(): void
+  + placeTileAtPosition(Point): void
+  + addTile(Tile): void
+   random: Random
+   zoomFactor: double
+   controlsMenu: GameControlsMenu
+   nextTile: Tile
+   offsetX: int
+   game: Game
+   offsetY: int
+}
+class Cell {
+  + radius: int
+  - board: Board
+  + setPosition(int, int): void
+  # paintComponent(Graphics): void
+  + to360Degrees(double): double
+   XCoord: int
+   board: Board
+   YCoord: int
+   radius: int
+}
+class CustomKeyAdapter {
+  + keyPressed(KeyEvent): void
+}
+class CustomMouseMotionAdapter {
+  + mouseMoved(MouseEvent): void
+}
+class EscapeMenu {
+  - createButton(String): JButton
+   menuVisible: boolean
+   settingsButtonListener: ActionListener
+   resumeButtonListener: ActionListener
+   quitButtonListener: ActionListener
+}
+class Game {
+  + getRandomInt(int): int
+}
+class PauseGame {
+  + keyPressed(KeyEvent): void
+}
+class Pocket {
+  - biome: Biome
+  - tiles: Set<Tile>
+  + addTile(Tile): void
+   tiles: Set<Tile>
+   size: int
+   biome: Biome
+}
+class RemainingTilesIndicator {
+  - remainingTiles: int
+  + draw(Graphics, int, int): void
+  - createHexagon(int, int, int, int): Polygon
+   totalHeight: int
+   remainingTiles: int
+}
+class ScoreDisplay {
+  - score: int
+  + setPosition(int, int): void
+  + draw(Graphics): void
+   score: int
+}
+class ScoreManager {
+  - currentScore: int
+  - recalculateScore(): void
+  - findPocketForTile(Tile, Biome): Pocket?
+  + addTile(Tile): void
+   currentScore: int
+}
+class Tile {
+  + determineSide(int, int): TileOrientation
+  + getBiome(TileOrientation): Biome
+  + getNeighbor(TileOrientation): Tile
+  + containsBiome(Biome): boolean
+  + assignRandomBiomes(): void
+  # drawTileAt(Graphics, int, int, float): void
+  # paintTile(Graphics, float): void
+  + isAdjacentTo(Tile): boolean
+  + rotate(boolean): void
+   biomes: Biome[]
+   dominantBiome: Biome
+}
+class TilePanningTransition {
+  + start(): void
+}
+
+Board                     -[#595959,dashed]->  CustomKeyAdapter         : "«create»"
+Board                     -[#595959,dashed]->  CustomMouseMotionAdapter : "«create»"
+Board                    "1" *-[#595959,plain]-> "game\n1" Game                     
+Board                     -[#595959,dashed]->  Game                     : "«create»"
+Board                     -[#595959,dashed]->  PauseGame                : "«create»"
+Board                     -[#595959,dashed]->  RemainingTilesIndicator  : "«create»"
+Board                    "1" *-[#595959,plain]-> "remainingTilesIndicator\n1" RemainingTilesIndicator  
+Board                     -[#595959,dashed]->  ScoreDisplay             : "«create»"
+Board                    "1" *-[#595959,plain]-> "scoreDisplay\n1" ScoreDisplay             
+Board                     -[#595959,dashed]->  ScoreManager             : "«create»"
+Board                    "1" *-[#595959,plain]-> "scoreManager\n1" ScoreManager             
+Board                    "1" *-[#595959,plain]-> "tiles\n*" Tile                     
+Board                     -[#595959,dashed]->  Tile                     : "«create»"
+Board                     -[#595959,dashed]->  TilePanningTransition    : "«create»"
+Cell                     "1" *-[#595959,plain]-> "board\n1" Board                    
+CustomKeyAdapter         "1" *-[#595959,plain]-> "board\n1" Board                    
+CustomMouseMotionAdapter "1" *-[#595959,plain]-> "board\n1" Board                    
+PauseGame                "1" *-[#595959,plain]-> "escapeMenu\n1" EscapeMenu               
+PauseGame                 -[#595959,dashed]->  EscapeMenu               : "«create»"
+Pocket                   "1" *-[#595959,plain]-> "tiles\n*" Tile                     
+ScoreManager              -[#595959,dashed]->  Pocket                   : "«create»"
+ScoreManager             "1" *-[#595959,plain]-> "pockets\n*" Pocket                   
+Tile                      -[#000082,plain]-^  Cell                     
+TilePanningTransition    "1" *-[#595959,plain]-> "board\n1" Board
+@enduml

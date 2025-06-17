@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1185pt" height="159pt" viewBox="0.00 0.00 1185.44 158.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 154.6)">
+<title>package</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-154.6 1181.44,-154.6 1181.44,4 -4,4"/>
+<!-- Biome -->
+<g id="node1" class="node">
+<title>Biome</title>
+<polygon fill="none" stroke="black" points="0,-8.9 0,-141.7 167.76,-141.7 167.76,-8.9 0,-8.9"/>
+<text text-anchor="middle" x="83.88" y="-125.1" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="83.88" y="-108.3" font-family="Times,serif" font-size="14.00">Biome</text>
+<polyline fill="none" stroke="black" points="0,-100.1 167.76,-100.1"/>
+<text text-anchor="start" x="8" y="-83.5" font-family="Times,serif" font-size="14.00">+ Biome() : </text>
+<polyline fill="none" stroke="black" points="0,-75.3 167.76,-75.3"/>
+<text text-anchor="start" x="8" y="-58.7" font-family="Times,serif" font-size="14.00">+ values() : Biome[]</text>
+<text text-anchor="start" x="8" y="-41.9" font-family="Times,serif" font-size="14.00"> + valueOf(String) : Biome</text>
+<polyline fill="none" stroke="black" points="0,-33.7 167.76,-33.7"/>
+<text text-anchor="start" x="8" y="-17.1" font-family="Times,serif" font-size="14.00">biomeColors : Color[]</text>
+</g>
+<!-- Fonts -->
+<g id="node2" class="node">
+<title>Fonts</title>
+<polygon fill="none" stroke="black" points="186.1,-0.5 186.1,-150.1 347.65,-150.1 347.65,-0.5 186.1,-0.5"/>
+<text text-anchor="middle" x="266.88" y="-133.5" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="266.88" y="-116.7" font-family="Times,serif" font-size="14.00">Fonts</text>
+<polyline fill="none" stroke="black" points="186.1,-108.5 347.65,-108.5"/>
+<text text-anchor="start" x="194.1" y="-91.9" font-family="Times,serif" font-size="14.00">+ Fonts() : </text>
+<polyline fill="none" stroke="black" points="186.1,-83.7 347.65,-83.7"/>
+<text text-anchor="start" x="194.1" y="-67.1" font-family="Times,serif" font-size="14.00">+ getFont(float) : Font</text>
+<text text-anchor="start" x="194.1" y="-50.3" font-family="Times,serif" font-size="14.00"> + valueOf(String) : Fonts</text>
+<text text-anchor="start" x="194.1" y="-33.5" font-family="Times,serif" font-size="14.00"> + values() : Fonts[]</text>
+<polyline fill="none" stroke="black" points="186.1,-25.3 347.65,-25.3"/>
+<text text-anchor="start" x="194.1" y="-8.7" font-family="Times,serif" font-size="14.00">fontPath : String</text>
+</g>
+<!-- Images -->
+<g id="node3" class="node">
+<title>Images</title>
+<polygon fill="none" stroke="black" points="365.45,-8.9 365.45,-141.7 536.31,-141.7 536.31,-8.9 365.45,-8.9"/>
+<text text-anchor="middle" x="450.88" y="-125.1" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="450.88" y="-108.3" font-family="Times,serif" font-size="14.00">Images</text>
+<polyline fill="none" stroke="black" points="365.45,-100.1 536.31,-100.1"/>
+<text text-anchor="start" x="373.45" y="-83.5" font-family="Times,serif" font-size="14.00">+ Images() : </text>
+<polyline fill="none" stroke="black" points="365.45,-75.3 536.31,-75.3"/>
+<text text-anchor="start" x="373.45" y="-58.7" font-family="Times,serif" font-size="14.00">+ values() : Images[]</text>
+<text text-anchor="start" x="373.45" y="-41.9" font-family="Times,serif" font-size="14.00"> + valueOf(String) : Images</text>
+<polyline fill="none" stroke="black" points="365.45,-33.7 536.31,-33.7"/>
+<text text-anchor="start" x="373.45" y="-17.1" font-family="Times,serif" font-size="14.00">imagePath : String</text>
+</g>
+<!-- Musics -->
+<g id="node4" class="node">
+<title>Musics</title>
+<polygon fill="none" stroke="black" points="554.44,-8.9 554.44,-141.7 725.32,-141.7 725.32,-8.9 554.44,-8.9"/>
+<text text-anchor="middle" x="639.88" y="-125.1" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="639.88" y="-108.3" font-family="Times,serif" font-size="14.00">Musics</text>
+<polyline fill="none" stroke="black" points="554.44,-100.1 725.32,-100.1"/>
+<text text-anchor="start" x="562.44" y="-83.5" font-family="Times,serif" font-size="14.00">+ Musics() : </text>
+<polyline fill="none" stroke="black" points="554.44,-75.3 725.32,-75.3"/>
+<text text-anchor="start" x="562.44" y="-58.7" font-family="Times,serif" font-size="14.00">+ values() : Musics[]</text>
+<text text-anchor="start" x="562.44" y="-41.9" font-family="Times,serif" font-size="14.00"> + valueOf(String) : Musics</text>
+<polyline fill="none" stroke="black" points="554.44,-33.7 725.32,-33.7"/>
+<text text-anchor="start" x="562.44" y="-17.1" font-family="Times,serif" font-size="14.00">soundsPath : String</text>
+</g>
+<!-- Sounds -->
+<g id="node5" class="node">
+<title>Sounds</title>
+<polygon fill="none" stroke="black" points="743.05,-8.9 743.05,-141.7 914.71,-141.7 914.71,-8.9 743.05,-8.9"/>
+<text text-anchor="middle" x="828.88" y="-125.1" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="828.88" y="-108.3" font-family="Times,serif" font-size="14.00">Sounds</text>
+<polyline fill="none" stroke="black" points="743.05,-100.1 914.71,-100.1"/>
+<text text-anchor="start" x="751.05" y="-83.5" font-family="Times,serif" font-size="14.00">+ Sounds() : </text>
+<polyline fill="none" stroke="black" points="743.05,-75.3 914.71,-75.3"/>
+<text text-anchor="start" x="751.05" y="-58.7" font-family="Times,serif" font-size="14.00">+ values() : Sounds[]</text>
+<text text-anchor="start" x="751.05" y="-41.9" font-family="Times,serif" font-size="14.00"> + valueOf(String) : Sounds</text>
+<polyline fill="none" stroke="black" points="743.05,-33.7 914.71,-33.7"/>
+<text text-anchor="start" x="751.05" y="-17.1" font-family="Times,serif" font-size="14.00">soundsPath : String</text>
+</g>
+<!-- TileOrientation -->
+<g id="node6" class="node">
+<title>TileOrientation</title>
+<polygon fill="none" stroke="black" points="932.32,-12.9 932.32,-137.7 1177.44,-137.7 1177.44,-12.9 932.32,-12.9"/>
+<text text-anchor="middle" x="1054.88" y="-121.1" font-family="Times,serif" font-size="14.00">&lt;&lt;enumeration&gt;&gt;</text>
+<text text-anchor="middle" x="1054.88" y="-104.3" font-family="Times,serif" font-size="14.00">TileOrientation</text>
+<polyline fill="none" stroke="black" points="932.32,-96.1 1177.44,-96.1"/>
+<text text-anchor="start" x="940.32" y="-79.5" font-family="Times,serif" font-size="14.00">+ TileOrientation() : </text>
+<polyline fill="none" stroke="black" points="932.32,-71.3 1177.44,-71.3"/>
+<text text-anchor="start" x="940.32" y="-54.7" font-family="Times,serif" font-size="14.00">+ oppositeOrientation() : TileOrientation</text>
+<text text-anchor="start" x="940.32" y="-37.9" font-family="Times,serif" font-size="14.00"> + valueOf(String) : TileOrientation</text>
+<text text-anchor="start" x="940.32" y="-21.1" font-family="Times,serif" font-size="14.00"> + values() : TileOrientation[]</text>
+</g>
+</g>
+</svg>

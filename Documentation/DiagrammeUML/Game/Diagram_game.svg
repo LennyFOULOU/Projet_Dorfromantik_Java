@@ -1,0 +1,393 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1840pt" height="1437pt" viewBox="0.00 0.00 1840.22 1436.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1432.6)">
+<title>package</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1432.6 1836.22,-1432.6 1836.22,4 -4,4"/>
+<!-- Board -->
+<g id="node1" class="node">
+<title>Board</title>
+<polygon fill="none" stroke="black" points="978.31,-892.1 978.31,-1428.1 1233.16,-1428.1 1233.16,-892.1 978.31,-892.1"/>
+<text text-anchor="middle" x="1105.73" y="-1411.5" font-family="Times,serif" font-size="14.00">Board</text>
+<polyline fill="none" stroke="black" points="978.31,-1403.3 1233.16,-1403.3"/>
+<text text-anchor="start" x="986.31" y="-1386.7" font-family="Times,serif" font-size="14.00">- offsetX : int</text>
+<text text-anchor="start" x="986.31" y="-1369.9" font-family="Times,serif" font-size="14.00"> - random : Random</text>
+<text text-anchor="start" x="986.31" y="-1353.1" font-family="Times,serif" font-size="14.00"> - zoomFactor : double</text>
+<text text-anchor="start" x="986.31" y="-1336.3" font-family="Times,serif" font-size="14.00"> - game : Game</text>
+<text text-anchor="start" x="986.31" y="-1319.5" font-family="Times,serif" font-size="14.00"> - nextTile : Tile</text>
+<text text-anchor="start" x="986.31" y="-1302.7" font-family="Times,serif" font-size="14.00"> - offsetY : int</text>
+<text text-anchor="start" x="986.31" y="-1285.9" font-family="Times,serif" font-size="14.00"> - controlsMenu : GameControlsMenu</text>
+<polyline fill="none" stroke="black" points="978.31,-1277.7 1233.16,-1277.7"/>
+<text text-anchor="start" x="986.31" y="-1261.1" font-family="Times,serif" font-size="14.00">+ handleSpaceKeyPress() : void</text>
+<text text-anchor="start" x="986.31" y="-1244.3" font-family="Times,serif" font-size="14.00"> + zoomIn() : void</text>
+<text text-anchor="start" x="986.31" y="-1227.5" font-family="Times,serif" font-size="14.00"> + moveBoard(int, int) : void</text>
+<text text-anchor="start" x="986.31" y="-1210.7" font-family="Times,serif" font-size="14.00"> + zoomOut() : void</text>
+<text text-anchor="start" x="986.31" y="-1193.9" font-family="Times,serif" font-size="14.00"> - initializeNextTile() : void</text>
+<text text-anchor="start" x="986.31" y="-1177.1" font-family="Times,serif" font-size="14.00"> - calculateAvailablePositions(Tile) : void</text>
+<text text-anchor="start" x="986.31" y="-1160.3" font-family="Times,serif" font-size="14.00"> + handleMouseMove(MouseEvent) : void</text>
+<text text-anchor="start" x="986.31" y="-1143.5" font-family="Times,serif" font-size="14.00"> - isTileAtPosition(Point) : boolean</text>
+<text text-anchor="start" x="986.31" y="-1126.7" font-family="Times,serif" font-size="14.00"> + handleMouseClick(MouseEvent) : void</text>
+<text text-anchor="start" x="986.31" y="-1109.9" font-family="Times,serif" font-size="14.00"> + paintComponent(Graphics) : void</text>
+<text text-anchor="start" x="986.31" y="-1093.1" font-family="Times,serif" font-size="14.00"> + autoReFocus(Tile) : void</text>
+<text text-anchor="start" x="986.31" y="-1076.3" font-family="Times,serif" font-size="14.00"> + getTileAt(int, int) : Tile</text>
+<text text-anchor="start" x="986.31" y="-1059.5" font-family="Times,serif" font-size="14.00"> - initializeCentralTile() : void</text>
+<text text-anchor="start" x="986.31" y="-1042.7" font-family="Times,serif" font-size="14.00"> + placeTileAtPosition(Point) : void</text>
+<text text-anchor="start" x="986.31" y="-1025.9" font-family="Times,serif" font-size="14.00"> + addTile(Tile) : void</text>
+<polyline fill="none" stroke="black" points="978.31,-1017.7 1233.16,-1017.7"/>
+<text text-anchor="start" x="986.31" y="-1001.1" font-family="Times,serif" font-size="14.00">random : Random</text>
+<text text-anchor="start" x="986.31" y="-984.3" font-family="Times,serif" font-size="14.00"> zoomFactor : double</text>
+<text text-anchor="start" x="986.31" y="-967.5" font-family="Times,serif" font-size="14.00"> controlsMenu : GameControlsMenu</text>
+<text text-anchor="start" x="986.31" y="-950.7" font-family="Times,serif" font-size="14.00"> nextTile : Tile</text>
+<text text-anchor="start" x="986.31" y="-933.9" font-family="Times,serif" font-size="14.00"> offsetX : int</text>
+<text text-anchor="start" x="986.31" y="-917.1" font-family="Times,serif" font-size="14.00"> game : Game</text>
+<text text-anchor="start" x="986.31" y="-900.3" font-family="Times,serif" font-size="14.00"> offsetY : int</text>
+</g>
+<!-- CustomKeyAdapter -->
+<g id="node3" class="node">
+<title>CustomKeyAdapter</title>
+<polygon fill="none" stroke="black" points="0,-747.1 0,-796.7 191.46,-796.7 191.46,-747.1 0,-747.1"/>
+<text text-anchor="middle" x="95.73" y="-780.1" font-family="Times,serif" font-size="14.00">CustomKeyAdapter</text>
+<polyline fill="none" stroke="black" points="0,-771.9 191.46,-771.9"/>
+<text text-anchor="start" x="8" y="-755.3" font-family="Times,serif" font-size="14.00">+ keyPressed(KeyEvent) : void</text>
+</g>
+<!-- Board&#45;&gt;CustomKeyAdapter -->
+<g id="edge1" class="edge">
+<title>Board-&gt;CustomKeyAdapter</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M977.97,-1361.48C699.75,-1361.48 63.82,-1361.48 63.82,-1361.48 63.82,-1361.48 63.82,-808.08 63.82,-808.08"/>
+<polygon fill="#595959" stroke="#595959" points="63.82,-798.08 68.32,-808.08 63.82,-801.86 63.82,-808.08 63.82,-808.08 63.82,-808.08 63.82,-801.86 59.32,-808.08 63.82,-798.08"/>
+<text text-anchor="middle" x="126.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- CustomMouseMotionAdapter -->
+<g id="node4" class="node">
+<title>CustomMouseMotionAdapter</title>
+<polygon fill="none" stroke="black" points="208.99,-747.1 208.99,-796.7 428.47,-796.7 428.47,-747.1 208.99,-747.1"/>
+<text text-anchor="middle" x="318.73" y="-780.1" font-family="Times,serif" font-size="14.00">CustomMouseMotionAdapter</text>
+<polyline fill="none" stroke="black" points="208.99,-771.9 428.47,-771.9"/>
+<text text-anchor="start" x="216.99" y="-755.3" font-family="Times,serif" font-size="14.00">+ mouseMoved(MouseEvent) : void</text>
+</g>
+<!-- Board&#45;&gt;CustomMouseMotionAdapter -->
+<g id="edge2" class="edge">
+<title>Board-&gt;CustomMouseMotionAdapter</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M977.95,-1227.23C746.62,-1227.23 282.15,-1227.23 282.15,-1227.23 282.15,-1227.23 282.15,-808.25 282.15,-808.25"/>
+<polygon fill="#595959" stroke="#595959" points="282.15,-798.25 286.65,-808.25 282.15,-802.03 282.15,-808.25 282.15,-808.25 282.15,-808.25 282.15,-802.03 277.65,-808.25 282.15,-798.25"/>
+<text text-anchor="middle" x="602.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Game -->
+<g id="node6" class="node">
+<title>Game</title>
+<polygon fill="none" stroke="black" points="446.1,-747.1 446.1,-796.7 603.36,-796.7 603.36,-747.1 446.1,-747.1"/>
+<text text-anchor="middle" x="524.73" y="-780.1" font-family="Times,serif" font-size="14.00">Game</text>
+<polyline fill="none" stroke="black" points="446.1,-771.9 603.36,-771.9"/>
+<text text-anchor="start" x="454.1" y="-755.3" font-family="Times,serif" font-size="14.00">+ getRandomInt(int) : int</text>
+</g>
+<!-- Board&#45;&gt;Game -->
+<g id="edge3" class="edge">
+<title>Board-&gt;Game</title>
+<path fill="none" stroke="#595959" d="M965.05,-1025.85C965.05,-1025.85 550.94,-1025.85 550.94,-1025.85 550.94,-1025.85 550.94,-808.4 550.94,-808.4"/>
+<polygon fill="#595959" stroke="#595959" points="965.2,-1025.85 971.2,-1021.85 977.2,-1025.85 971.2,-1029.85 965.2,-1025.85"/>
+<polygon fill="#595959" stroke="#595959" points="550.94,-798.4 555.44,-808.4 550.94,-802.18 550.94,-808.4 550.94,-808.4 550.94,-808.4 550.94,-802.18 546.44,-808.4 550.94,-798.4"/>
+<text text-anchor="middle" x="535.78" y="-818.18" font-family="Times,serif" font-size="14.00">game</text>
+<text text-anchor="middle" x="535.78" y="-801.38" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="974.6" y="-1030.05" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- Board&#45;&gt;Game -->
+<g id="edge4" class="edge">
+<title>Board-&gt;Game</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M978.07,-1092.98C799.97,-1092.98 498.52,-1092.98 498.52,-1092.98 498.52,-1092.98 498.52,-808.31 498.52,-808.31"/>
+<polygon fill="#595959" stroke="#595959" points="498.52,-798.31 503.02,-808.31 498.52,-802.09 498.52,-808.31 498.52,-808.31 498.52,-808.31 498.52,-802.09 494.02,-808.31 498.52,-798.31"/>
+<text text-anchor="middle" x="834.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- PauseGame -->
+<g id="node7" class="node">
+<title>PauseGame</title>
+<polygon fill="none" stroke="black" points="621,-747.1 621,-796.7 812.46,-796.7 812.46,-747.1 621,-747.1"/>
+<text text-anchor="middle" x="716.73" y="-780.1" font-family="Times,serif" font-size="14.00">PauseGame</text>
+<polyline fill="none" stroke="black" points="621,-771.9 812.46,-771.9"/>
+<text text-anchor="start" x="629" y="-755.3" font-family="Times,serif" font-size="14.00">+ keyPressed(KeyEvent) : void</text>
+</g>
+<!-- Board&#45;&gt;PauseGame -->
+<g id="edge5" class="edge">
+<title>Board-&gt;PauseGame</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M977.82,-958.73C864.44,-958.73 716.73,-958.73 716.73,-958.73 716.73,-958.73 716.73,-808.31 716.73,-808.31"/>
+<polygon fill="#595959" stroke="#595959" points="716.73,-798.31 721.23,-808.31 716.73,-802.1 716.73,-808.31 716.73,-808.31 716.73,-808.31 716.73,-802.1 712.23,-808.31 716.73,-798.31"/>
+<text text-anchor="middle" x="912.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- RemainingTilesIndicator -->
+<g id="node9" class="node">
+<title>RemainingTilesIndicator</title>
+<polygon fill="none" stroke="black" points="830.43,-705.5 830.43,-838.3 1089.04,-838.3 1089.04,-705.5 830.43,-705.5"/>
+<text text-anchor="middle" x="959.73" y="-821.7" font-family="Times,serif" font-size="14.00">RemainingTilesIndicator</text>
+<polyline fill="none" stroke="black" points="830.43,-813.5 1089.04,-813.5"/>
+<text text-anchor="start" x="838.43" y="-796.9" font-family="Times,serif" font-size="14.00">- remainingTiles : int</text>
+<polyline fill="none" stroke="black" points="830.43,-788.7 1089.04,-788.7"/>
+<text text-anchor="start" x="838.43" y="-772.1" font-family="Times,serif" font-size="14.00">+ draw(Graphics, int, int) : void</text>
+<text text-anchor="start" x="838.43" y="-755.3" font-family="Times,serif" font-size="14.00"> - createHexagon(int, int, int, int) : Polygon</text>
+<polyline fill="none" stroke="black" points="830.43,-747.1 1089.04,-747.1"/>
+<text text-anchor="start" x="838.43" y="-730.5" font-family="Times,serif" font-size="14.00">totalHeight : int</text>
+<text text-anchor="start" x="838.43" y="-713.7" font-family="Times,serif" font-size="14.00"> remainingTiles : int</text>
+</g>
+<!-- Board&#45;&gt;RemainingTilesIndicator -->
+<g id="edge6" class="edge">
+<title>Board-&gt;RemainingTilesIndicator</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1052.13,-891.81C1052.13,-891.81 1052.13,-849.78 1052.13,-849.78"/>
+<polygon fill="#595959" stroke="#595959" points="1052.13,-839.78 1056.63,-849.78 1052.13,-843.56 1052.13,-849.78 1052.13,-849.78 1052.13,-849.78 1052.13,-843.56 1047.63,-849.78 1052.13,-839.78"/>
+<text text-anchor="middle" x="986.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Board&#45;&gt;RemainingTilesIndicator -->
+<g id="edge7" class="edge">
+<title>Board-&gt;RemainingTilesIndicator</title>
+<path fill="none" stroke="#595959" d="M1015.22,-878.75C1015.22,-878.75 1015.22,-849.78 1015.22,-849.78"/>
+<polygon fill="#595959" stroke="#595959" points="1015.22,-878.9 1019.22,-884.9 1015.22,-890.9 1011.22,-884.9 1015.22,-878.9"/>
+<polygon fill="#595959" stroke="#595959" points="1015.22,-839.78 1019.72,-849.78 1015.22,-843.56 1015.22,-849.78 1015.22,-849.78 1015.22,-849.78 1015.22,-843.56 1010.72,-849.78 1015.22,-839.78"/>
+<text text-anchor="middle" x="1082.86" y="-859.56" font-family="Times,serif" font-size="14.00">remainingTilesIndicator</text>
+<text text-anchor="middle" x="1082.86" y="-842.76" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1011.72" y="-879.21" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- ScoreDisplay -->
+<g id="node10" class="node">
+<title>ScoreDisplay</title>
+<polygon fill="none" stroke="black" points="1107.48,-713.9 1107.48,-829.9 1277.99,-829.9 1277.99,-713.9 1107.48,-713.9"/>
+<text text-anchor="middle" x="1192.73" y="-813.3" font-family="Times,serif" font-size="14.00">ScoreDisplay</text>
+<polyline fill="none" stroke="black" points="1107.48,-805.1 1277.99,-805.1"/>
+<text text-anchor="start" x="1115.48" y="-788.5" font-family="Times,serif" font-size="14.00">- score : int</text>
+<polyline fill="none" stroke="black" points="1107.48,-780.3 1277.99,-780.3"/>
+<text text-anchor="start" x="1115.48" y="-763.7" font-family="Times,serif" font-size="14.00">+ setPosition(int, int) : void</text>
+<text text-anchor="start" x="1115.48" y="-746.9" font-family="Times,serif" font-size="14.00"> + draw(Graphics) : void</text>
+<polyline fill="none" stroke="black" points="1107.48,-738.7 1277.99,-738.7"/>
+<text text-anchor="start" x="1115.48" y="-722.1" font-family="Times,serif" font-size="14.00">score : int</text>
+</g>
+<!-- Board&#45;&gt;ScoreDisplay -->
+<g id="edge8" class="edge">
+<title>Board-&gt;ScoreDisplay</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1170.32,-891.81C1170.32,-891.81 1170.32,-841.49 1170.32,-841.49"/>
+<polygon fill="#595959" stroke="#595959" points="1170.32,-831.49 1174.82,-841.49 1170.32,-835.27 1170.32,-841.49 1170.32,-841.49 1170.32,-841.49 1170.32,-835.27 1165.82,-841.49 1170.32,-831.49"/>
+<text text-anchor="middle" x="1133.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Board&#45;&gt;ScoreDisplay -->
+<g id="edge9" class="edge">
+<title>Board-&gt;ScoreDisplay</title>
+<path fill="none" stroke="#595959" d="M1138.9,-878.75C1138.9,-878.75 1138.9,-841.49 1138.9,-841.49"/>
+<polygon fill="#595959" stroke="#595959" points="1138.9,-878.9 1142.9,-884.9 1138.9,-890.9 1134.9,-884.9 1138.9,-878.9"/>
+<polygon fill="#595959" stroke="#595959" points="1138.9,-831.49 1143.4,-841.49 1138.9,-835.27 1138.9,-841.49 1138.9,-841.49 1138.9,-841.49 1138.9,-835.27 1134.4,-841.49 1138.9,-831.49"/>
+<text text-anchor="middle" x="1175.44" y="-851.27" font-family="Times,serif" font-size="14.00">scoreDisplay</text>
+<text text-anchor="middle" x="1175.44" y="-834.47" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1135.4" y="-879.21" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- ScoreManager -->
+<g id="node11" class="node">
+<title>ScoreManager</title>
+<polygon fill="none" stroke="black" points="1295.87,-705.5 1295.87,-838.3 1557.59,-838.3 1557.59,-705.5 1295.87,-705.5"/>
+<text text-anchor="middle" x="1426.73" y="-821.7" font-family="Times,serif" font-size="14.00">ScoreManager</text>
+<polyline fill="none" stroke="black" points="1295.87,-813.5 1557.59,-813.5"/>
+<text text-anchor="start" x="1303.87" y="-796.9" font-family="Times,serif" font-size="14.00">- currentScore : int</text>
+<polyline fill="none" stroke="black" points="1295.87,-788.7 1557.59,-788.7"/>
+<text text-anchor="start" x="1303.87" y="-772.1" font-family="Times,serif" font-size="14.00">- recalculateScore() : void</text>
+<text text-anchor="start" x="1303.87" y="-755.3" font-family="Times,serif" font-size="14.00"> - findPocketForTile(Tile, Biome) : Pocket?</text>
+<text text-anchor="start" x="1303.87" y="-738.5" font-family="Times,serif" font-size="14.00"> + addTile(Tile) : void</text>
+<polyline fill="none" stroke="black" points="1295.87,-730.3 1557.59,-730.3"/>
+<text text-anchor="start" x="1303.87" y="-713.7" font-family="Times,serif" font-size="14.00">currentScore : int</text>
+</g>
+<!-- Board&#45;&gt;ScoreManager -->
+<g id="edge10" class="edge">
+<title>Board-&gt;ScoreManager</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1201.74,-891.71C1201.74,-858.53 1201.74,-836 1201.74,-836 1201.74,-836 1284.31,-836 1284.31,-836"/>
+<polygon fill="#595959" stroke="#595959" points="1294.31,-836 1284.31,-840.5 1290.53,-836 1284.31,-836 1284.31,-836 1284.31,-836 1290.53,-836 1284.31,-831.5 1294.31,-836"/>
+<text text-anchor="middle" x="1274.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Board&#45;&gt;ScoreManager -->
+<g id="edge11" class="edge">
+<title>Board-&gt;ScoreManager</title>
+<path fill="none" stroke="#595959" d="M1103.79,-878.59C1103.79,-878.59 1103.79,-833.2 1103.79,-833.2 1103.79,-833.2 1284.16,-833.2 1284.16,-833.2"/>
+<polygon fill="#595959" stroke="#595959" points="1103.79,-878.74 1107.79,-884.74 1103.79,-890.74 1099.79,-884.74 1103.79,-878.74"/>
+<polygon fill="#595959" stroke="#595959" points="1294.16,-833.2 1284.16,-837.7 1290.38,-833.2 1284.16,-833.2 1284.16,-833.2 1284.16,-833.2 1290.38,-833.2 1284.16,-828.7 1294.16,-833.2"/>
+<text text-anchor="middle" x="1255.73" y="-854.2" font-family="Times,serif" font-size="14.00">scoreManager</text>
+<text text-anchor="middle" x="1255.73" y="-837.4" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1100.29" y="-879.04" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- Tile -->
+<g id="node12" class="node">
+<title>Tile</title>
+<polygon fill="none" stroke="black" points="1471.54,-238.5 1471.54,-464.1 1737.93,-464.1 1737.93,-238.5 1471.54,-238.5"/>
+<text text-anchor="middle" x="1604.73" y="-447.5" font-family="Times,serif" font-size="14.00">Tile</text>
+<polyline fill="none" stroke="black" points="1471.54,-439.3 1737.93,-439.3"/>
+<text text-anchor="start" x="1479.54" y="-422.7" font-family="Times,serif" font-size="14.00">+ determineSide(int, int) : TileOrientation</text>
+<text text-anchor="start" x="1479.54" y="-405.9" font-family="Times,serif" font-size="14.00"> + getBiome(TileOrientation) : Biome</text>
+<text text-anchor="start" x="1479.54" y="-389.1" font-family="Times,serif" font-size="14.00"> + getNeighbor(TileOrientation) : Tile</text>
+<text text-anchor="start" x="1479.54" y="-372.3" font-family="Times,serif" font-size="14.00"> + containsBiome(Biome) : boolean</text>
+<text text-anchor="start" x="1479.54" y="-355.5" font-family="Times,serif" font-size="14.00"> + assignRandomBiomes() : void</text>
+<text text-anchor="start" x="1479.54" y="-338.7" font-family="Times,serif" font-size="14.00"> # drawTileAt(Graphics, int, int, float) : void</text>
+<text text-anchor="start" x="1479.54" y="-321.9" font-family="Times,serif" font-size="14.00"> # paintTile(Graphics, float) : void</text>
+<text text-anchor="start" x="1479.54" y="-305.1" font-family="Times,serif" font-size="14.00"> + isAdjacentTo(Tile) : boolean</text>
+<text text-anchor="start" x="1479.54" y="-288.3" font-family="Times,serif" font-size="14.00"> + rotate(boolean) : void</text>
+<polyline fill="none" stroke="black" points="1471.54,-280.1 1737.93,-280.1"/>
+<text text-anchor="start" x="1479.54" y="-263.5" font-family="Times,serif" font-size="14.00">biomes : Biome[]</text>
+<text text-anchor="start" x="1479.54" y="-246.7" font-family="Times,serif" font-size="14.00"> dominantBiome : Biome</text>
+</g>
+<!-- Board&#45;&gt;Tile -->
+<g id="edge12" class="edge">
+<title>Board-&gt;Tile</title>
+<path fill="none" stroke="#595959" d="M1096.41,-878.61C1096.41,-878.61 1096.41,-313.53 1096.41,-313.53 1096.41,-313.53 1096.41,-302.31 1096.41,-302.31"/>
+<polygon fill="#595959" stroke="#595959" points="1096.41,-878.76 1100.41,-884.76 1096.41,-890.76 1092.41,-884.76 1096.41,-878.76"/>
+<polygon fill="#595959" stroke="#595959" points="1469.96,-313.5 1459.83,-317.7 1466.18,-313.38 1459.96,-313.2 1459.96,-313.2 1459.96,-313.2 1466.18,-313.38 1460.1,-308.7 1469.96,-313.5"/>
+<text text-anchor="middle" x="1459.51" y="-334.53" font-family="Times,serif" font-size="14.00">tiles</text>
+<text text-anchor="middle" x="1459.51" y="-317.73" font-family="Times,serif" font-size="14.00">*</text>
+<text text-anchor="middle" x="1092.91" y="-879.06" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- Board&#45;&gt;Tile -->
+<g id="edge13" class="edge">
+<title>Board-&gt;Tile</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1100.1,-891.78C1100.1,-669.22 1100.1,-389.07 1100.1,-389.07 1100.1,-389.07 1459.94,-389.07 1459.94,-389.07"/>
+<polygon fill="#595959" stroke="#595959" points="1469.94,-389.07 1459.94,-393.57 1466.16,-389.07 1459.94,-389.07 1459.94,-389.07 1459.94,-389.07 1466.16,-389.07 1459.94,-384.57 1469.94,-389.07"/>
+<text text-anchor="middle" x="1647.44" y="-674.4" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- TilePanningTransition -->
+<g id="node13" class="node">
+<title>TilePanningTransition</title>
+<polygon fill="none" stroke="black" points="1651.74,-747.1 1651.74,-796.7 1793.72,-796.7 1793.72,-747.1 1651.74,-747.1"/>
+<text text-anchor="middle" x="1722.73" y="-780.1" font-family="Times,serif" font-size="14.00">TilePanningTransition</text>
+<polyline fill="none" stroke="black" points="1651.74,-771.9 1793.72,-771.9"/>
+<text text-anchor="start" x="1659.74" y="-755.3" font-family="Times,serif" font-size="14.00">+ start() : void</text>
+</g>
+<!-- Board&#45;&gt;TilePanningTransition -->
+<g id="edge14" class="edge">
+<title>Board-&gt;TilePanningTransition</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1233.46,-1249.6C1420.36,-1249.6 1746.4,-1249.6 1746.4,-1249.6 1746.4,-1249.6 1746.4,-808.13 1746.4,-808.13"/>
+<polygon fill="#595959" stroke="#595959" points="1746.4,-798.13 1750.9,-808.13 1746.4,-801.91 1746.4,-808.13 1746.4,-808.13 1746.4,-808.13 1746.4,-801.91 1741.9,-808.13 1746.4,-798.13"/>
+<text text-anchor="middle" x="1681.44" y="-861" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Cell -->
+<g id="node2" class="node">
+<title>Cell</title>
+<polygon fill="none" stroke="black" points="1613.25,-0.5 1613.25,-200.5 1832.22,-200.5 1832.22,-0.5 1613.25,-0.5"/>
+<text text-anchor="middle" x="1722.73" y="-183.9" font-family="Times,serif" font-size="14.00">Cell</text>
+<polyline fill="none" stroke="black" points="1613.25,-175.7 1832.22,-175.7"/>
+<text text-anchor="start" x="1621.25" y="-159.1" font-family="Times,serif" font-size="14.00">+ radius : int</text>
+<text text-anchor="start" x="1621.25" y="-142.3" font-family="Times,serif" font-size="14.00"> - board : Board</text>
+<polyline fill="none" stroke="black" points="1613.25,-134.1 1832.22,-134.1"/>
+<text text-anchor="start" x="1621.25" y="-117.5" font-family="Times,serif" font-size="14.00">+ setPosition(int, int) : void</text>
+<text text-anchor="start" x="1621.25" y="-100.7" font-family="Times,serif" font-size="14.00"> # paintComponent(Graphics) : void</text>
+<text text-anchor="start" x="1621.25" y="-83.9" font-family="Times,serif" font-size="14.00"> + to360Degrees(double) : double</text>
+<polyline fill="none" stroke="black" points="1613.25,-75.7 1832.22,-75.7"/>
+<text text-anchor="start" x="1621.25" y="-59.1" font-family="Times,serif" font-size="14.00">XCoord : int</text>
+<text text-anchor="start" x="1621.25" y="-42.3" font-family="Times,serif" font-size="14.00"> board : Board</text>
+<text text-anchor="start" x="1621.25" y="-25.5" font-family="Times,serif" font-size="14.00"> YCoord : int</text>
+<text text-anchor="start" x="1621.25" y="-8.7" font-family="Times,serif" font-size="14.00"> radius : int</text>
+</g>
+<!-- Cell&#45;&gt;Board -->
+<g id="edge15" class="edge">
+<title>Cell-&gt;Board</title>
+<path fill="none" stroke="#595959" d="M1599.94,-100.5C1599.94,-100.5 1092.73,-100.5 1092.73,-100.5 1092.73,-100.5 1092.73,-880.47 1092.73,-880.47"/>
+<polygon fill="#595959" stroke="#595959" points="1600.09,-100.5 1606.09,-96.5 1612.09,-100.5 1606.09,-104.5 1600.09,-100.5"/>
+<polygon fill="#595959" stroke="#595959" points="1092.73,-890.47 1088.23,-880.47 1092.73,-886.69 1092.73,-880.47 1092.73,-880.47 1092.73,-880.47 1092.73,-886.69 1097.23,-880.47 1092.73,-890.47"/>
+<text text-anchor="middle" x="1076.79" y="-879.09" font-family="Times,serif" font-size="14.00">board</text>
+<text text-anchor="middle" x="1076.79" y="-862.29" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1609.49" y="-104.7" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- CustomKeyAdapter&#45;&gt;Board -->
+<g id="edge16" class="edge">
+<title>CustomKeyAdapter-&gt;Board</title>
+<path fill="none" stroke="#595959" d="M127.64,-810.15C127.64,-810.15 127.64,-1294.35 127.64,-1294.35 127.64,-1294.35 966.65,-1294.35 966.65,-1294.35"/>
+<polygon fill="#595959" stroke="#595959" points="127.64,-810 123.64,-804 127.64,-798 131.64,-804 127.64,-810"/>
+<polygon fill="#595959" stroke="#595959" points="976.65,-1294.35 966.65,-1298.85 972.86,-1294.35 966.65,-1294.35 966.65,-1294.35 966.65,-1294.35 972.86,-1294.35 966.65,-1289.85 976.65,-1294.35"/>
+<text text-anchor="middle" x="961.93" y="-1315.35" font-family="Times,serif" font-size="14.00">board</text>
+<text text-anchor="middle" x="961.93" y="-1298.55" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="124.14" y="-801.3" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- CustomMouseMotionAdapter&#45;&gt;Board -->
+<g id="edge17" class="edge">
+<title>CustomMouseMotionAdapter-&gt;Board</title>
+<path fill="none" stroke="#595959" d="M355.31,-810.12C355.31,-810.12 355.31,-1160.1 355.31,-1160.1 355.31,-1160.1 966.79,-1160.1 966.79,-1160.1"/>
+<polygon fill="#595959" stroke="#595959" points="355.31,-809.97 351.31,-803.97 355.31,-797.97 359.31,-803.97 355.31,-809.97"/>
+<polygon fill="#595959" stroke="#595959" points="976.79,-1160.1 966.79,-1164.6 973.01,-1160.1 966.79,-1160.1 966.79,-1160.1 966.79,-1160.1 973.01,-1160.1 966.79,-1155.6 976.79,-1160.1"/>
+<text text-anchor="middle" x="962.07" y="-1181.1" font-family="Times,serif" font-size="14.00">board</text>
+<text text-anchor="middle" x="962.07" y="-1164.3" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="351.81" y="-801.27" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- EscapeMenu -->
+<g id="node5" class="node">
+<title>EscapeMenu</title>
+<polygon fill="none" stroke="black" points="597.17,-514.5 597.17,-639.3 838.3,-639.3 838.3,-514.5 597.17,-514.5"/>
+<text text-anchor="middle" x="717.73" y="-622.7" font-family="Times,serif" font-size="14.00">EscapeMenu</text>
+<polyline fill="none" stroke="black" points="597.17,-614.5 838.3,-614.5"/>
+<text text-anchor="start" x="605.17" y="-597.9" font-family="Times,serif" font-size="14.00">- createButton(String) : JButton</text>
+<polyline fill="none" stroke="black" points="597.17,-589.7 838.3,-589.7"/>
+<text text-anchor="start" x="605.17" y="-573.1" font-family="Times,serif" font-size="14.00">menuVisible : boolean</text>
+<text text-anchor="start" x="605.17" y="-556.3" font-family="Times,serif" font-size="14.00"> settingsButtonListener : ActionListener</text>
+<text text-anchor="start" x="605.17" y="-539.5" font-family="Times,serif" font-size="14.00"> resumeButtonListener : ActionListener</text>
+<text text-anchor="start" x="605.17" y="-522.7" font-family="Times,serif" font-size="14.00"> quitButtonListener : ActionListener</text>
+</g>
+<!-- PauseGame&#45;&gt;EscapeMenu -->
+<g id="edge18" class="edge">
+<title>PauseGame-&gt;EscapeMenu</title>
+<path fill="none" stroke="#595959" d="M684.82,-733.75C684.82,-733.75 684.82,-650.81 684.82,-650.81"/>
+<polygon fill="#595959" stroke="#595959" points="684.82,-733.9 688.82,-739.91 684.82,-745.9 680.82,-739.9 684.82,-733.9"/>
+<polygon fill="#595959" stroke="#595959" points="684.82,-640.81 689.32,-650.81 684.82,-644.59 684.82,-650.81 684.82,-650.81 684.82,-650.81 684.82,-644.59 680.32,-650.81 684.82,-640.81"/>
+<text text-anchor="middle" x="649.84" y="-660.59" font-family="Times,serif" font-size="14.00">escapeMenu</text>
+<text text-anchor="middle" x="649.84" y="-643.79" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="681.32" y="-734.21" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- PauseGame&#45;&gt;EscapeMenu -->
+<g id="edge19" class="edge">
+<title>PauseGame-&gt;EscapeMenu</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M748.64,-746.81C748.64,-746.81 748.64,-650.81 748.64,-650.81"/>
+<polygon fill="#595959" stroke="#595959" points="748.64,-640.81 753.14,-650.81 748.64,-644.59 748.64,-650.81 748.64,-650.81 748.64,-650.81 748.64,-644.59 744.14,-650.81 748.64,-640.81"/>
+<text text-anchor="middle" x="757.44" y="-674.4" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- Pocket -->
+<g id="node8" class="node">
+<title>Pocket</title>
+<polygon fill="none" stroke="black" points="1419.83,-502.1 1419.83,-651.7 1557.63,-651.7 1557.63,-502.1 1419.83,-502.1"/>
+<text text-anchor="middle" x="1488.73" y="-635.1" font-family="Times,serif" font-size="14.00">Pocket</text>
+<polyline fill="none" stroke="black" points="1419.83,-626.9 1557.63,-626.9"/>
+<text text-anchor="start" x="1427.83" y="-610.3" font-family="Times,serif" font-size="14.00">- biome : Biome</text>
+<text text-anchor="start" x="1427.83" y="-593.5" font-family="Times,serif" font-size="14.00"> - tiles : Set&lt;Tile&gt;</text>
+<polyline fill="none" stroke="black" points="1419.83,-585.3 1557.63,-585.3"/>
+<text text-anchor="start" x="1427.83" y="-568.7" font-family="Times,serif" font-size="14.00">+ addTile(Tile) : void</text>
+<polyline fill="none" stroke="black" points="1419.83,-560.5 1557.63,-560.5"/>
+<text text-anchor="start" x="1427.83" y="-543.9" font-family="Times,serif" font-size="14.00">tiles : Set&lt;Tile&gt;</text>
+<text text-anchor="start" x="1427.83" y="-527.1" font-family="Times,serif" font-size="14.00"> size : int</text>
+<text text-anchor="start" x="1427.83" y="-510.3" font-family="Times,serif" font-size="14.00"> biome : Biome</text>
+</g>
+<!-- Pocket&#45;&gt;Tile -->
+<g id="edge20" class="edge">
+<title>Pocket-&gt;Tile</title>
+<path fill="none" stroke="#595959" d="M1514.59,-488.73C1514.59,-488.73 1514.59,-475.55 1514.59,-475.55"/>
+<polygon fill="#595959" stroke="#595959" points="1514.59,-488.88 1518.59,-494.88 1514.59,-500.88 1510.59,-494.88 1514.59,-488.88"/>
+<polygon fill="#595959" stroke="#595959" points="1514.59,-465.55 1519.09,-475.55 1514.59,-469.33 1514.59,-475.55 1514.59,-475.55 1514.59,-475.55 1514.59,-469.33 1510.09,-475.55 1514.59,-465.55"/>
+<text text-anchor="middle" x="1526.25" y="-485.33" font-family="Times,serif" font-size="14.00">tiles</text>
+<text text-anchor="middle" x="1526.25" y="-468.53" font-family="Times,serif" font-size="14.00">*</text>
+<text text-anchor="middle" x="1511.09" y="-489.18" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- ScoreManager&#45;&gt;Pocket -->
+<g id="edge21" class="edge">
+<title>ScoreManager-&gt;Pocket</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1511.67,-705.06C1511.67,-705.06 1511.67,-663.23 1511.67,-663.23"/>
+<polygon fill="#595959" stroke="#595959" points="1511.67,-653.23 1516.17,-663.23 1511.67,-657.01 1511.67,-663.23 1511.67,-663.23 1511.67,-663.23 1511.67,-657.01 1507.17,-663.23 1511.67,-653.23"/>
+<text text-anchor="middle" x="1450.44" y="-674.4" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- ScoreManager&#45;&gt;Pocket -->
+<g id="edge22" class="edge">
+<title>ScoreManager-&gt;Pocket</title>
+<path fill="none" stroke="#595959" d="M1465.75,-692.01C1465.75,-692.01 1465.75,-663.23 1465.75,-663.23"/>
+<polygon fill="#595959" stroke="#595959" points="1465.75,-692.16 1469.75,-698.16 1465.75,-704.16 1461.75,-698.16 1465.75,-692.16"/>
+<polygon fill="#595959" stroke="#595959" points="1465.75,-653.23 1470.25,-663.23 1465.75,-657.01 1465.75,-663.23 1465.75,-663.23 1465.75,-663.23 1465.75,-657.01 1461.25,-663.23 1465.75,-653.23"/>
+<text text-anchor="middle" x="1487.13" y="-673.01" font-family="Times,serif" font-size="14.00">pockets</text>
+<text text-anchor="middle" x="1487.13" y="-656.21" font-family="Times,serif" font-size="14.00">*</text>
+<text text-anchor="middle" x="1462.25" y="-692.46" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- Tile&#45;&gt;Cell -->
+<g id="edge23" class="edge">
+<title>Tile-&gt;Cell</title>
+<path fill="none" stroke="#000082" d="M1675.59,-238.01C1675.59,-238.01 1675.59,-212.15 1675.59,-212.15"/>
+<polygon fill="#000082" stroke="#000082" points="1679.09,-212.15 1675.59,-202.15 1672.09,-212.15 1679.09,-212.15"/>
+</g>
+<!-- TilePanningTransition&#45;&gt;Board -->
+<g id="edge24" class="edge">
+<title>TilePanningTransition-&gt;Board</title>
+<path fill="none" stroke="#595959" d="M1699.07,-810.16C1699.07,-810.16 1699.07,-1070.6 1699.07,-1070.6 1699.07,-1070.6 1244.6,-1070.6 1244.6,-1070.6"/>
+<polygon fill="#595959" stroke="#595959" points="1699.07,-810.01 1695.07,-804.01 1699.07,-798.01 1703.07,-804.01 1699.07,-810.01"/>
+<polygon fill="#595959" stroke="#595959" points="1234.6,-1070.6 1244.6,-1066.1 1238.38,-1070.6 1244.6,-1070.6 1244.6,-1070.6 1244.6,-1070.6 1238.38,-1070.6 1244.6,-1075.1 1234.6,-1070.6"/>
+<text text-anchor="middle" x="1249.32" y="-1091.6" font-family="Times,serif" font-size="14.00">board</text>
+<text text-anchor="middle" x="1249.32" y="-1074.8" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1695.57" y="-801.31" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+</g>
+</svg>

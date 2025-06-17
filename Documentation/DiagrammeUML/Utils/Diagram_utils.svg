@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2010pt" height="496pt" viewBox="0.00 0.00 2009.98 496.40">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 492.4)">
+<title>package</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-492.4 2005.98,-492.4 2005.98,4 -4,4"/>
+<!-- Database -->
+<g id="node1" class="node">
+<title>Database</title>
+<polygon fill="none" stroke="black" points="0,-179.1 0,-487.9 462.69,-487.9 462.69,-179.1 0,-179.1"/>
+<text text-anchor="middle" x="231.35" y="-471.3" font-family="Times,serif" font-size="14.00">Database</text>
+<polyline fill="none" stroke="black" points="0,-463.1 462.69,-463.1"/>
+<text text-anchor="start" x="8" y="-446.5" font-family="Times,serif" font-size="14.00">+ Database() : </text>
+<polyline fill="none" stroke="black" points="0,-438.3 462.69,-438.3"/>
+<text text-anchor="start" x="8" y="-421.7" font-family="Times,serif" font-size="14.00">- database : Connection</text>
+<polyline fill="none" stroke="black" points="0,-413.5 462.69,-413.5"/>
+<text text-anchor="start" x="8" y="-396.9" font-family="Times,serif" font-size="14.00">+ addScore(long, int) : void</text>
+<text text-anchor="start" x="8" y="-380.1" font-family="Times,serif" font-size="14.00"> + getSeedBySeriesId(long) : long</text>
+<text text-anchor="start" x="8" y="-363.3" font-family="Times,serif" font-size="14.00"> + countSeriesByDateRange(Date, Date, boolean) : int</text>
+<text text-anchor="start" x="8" y="-346.5" font-family="Times,serif" font-size="14.00"> + getSeriesByDateRange(Date, Date) : List&lt;String&gt;</text>
+<text text-anchor="start" x="8" y="-329.7" font-family="Times,serif" font-size="14.00"> + getScoresBySeriesId(long) : List&lt;Integer&gt;</text>
+<text text-anchor="start" x="8" y="-312.9" font-family="Times,serif" font-size="14.00"> + getAllScores(long) : List&lt;PlayerScore&gt;</text>
+<text text-anchor="start" x="8" y="-296.1" font-family="Times,serif" font-size="14.00"> + getSeriesByDateRangePaginated(Date, Date, int, int, boolean) : List&lt;String&gt;</text>
+<text text-anchor="start" x="8" y="-279.3" font-family="Times,serif" font-size="14.00"> + addCustomSeed(long) : void</text>
+<text text-anchor="start" x="8" y="-262.5" font-family="Times,serif" font-size="14.00"> + close() : void</text>
+<text text-anchor="start" x="8" y="-245.7" font-family="Times,serif" font-size="14.00"> + getSeedByName(String) : long</text>
+<polyline fill="none" stroke="black" points="0,-237.5 462.69,-237.5"/>
+<text text-anchor="start" x="8" y="-220.9" font-family="Times,serif" font-size="14.00">database : Connection</text>
+<text text-anchor="start" x="8" y="-204.1" font-family="Times,serif" font-size="14.00"> topPlayers : List&lt;PlayerScore&gt;</text>
+<text text-anchor="start" x="8" y="-187.3" font-family="Times,serif" font-size="14.00"> allSeries : List&lt;String&gt;</text>
+</g>
+<!-- PlayerScore -->
+<g id="node8" class="node">
+<title>PlayerScore</title>
+<polygon fill="none" stroke="black" points="145.72,-4.9 145.72,-120.9 316.98,-120.9 316.98,-4.9 145.72,-4.9"/>
+<text text-anchor="middle" x="231.35" y="-104.3" font-family="Times,serif" font-size="14.00">PlayerScore</text>
+<polyline fill="none" stroke="black" points="145.72,-96.1 316.98,-96.1"/>
+<text text-anchor="start" x="153.72" y="-79.5" font-family="Times,serif" font-size="14.00">+ PlayerScore(String, int) : </text>
+<polyline fill="none" stroke="black" points="145.72,-71.3 316.98,-71.3"/>
+<text text-anchor="start" x="153.72" y="-54.7" font-family="Times,serif" font-size="14.00">- score : int</text>
+<polyline fill="none" stroke="black" points="145.72,-46.5 316.98,-46.5"/>
+<text text-anchor="start" x="153.72" y="-29.9" font-family="Times,serif" font-size="14.00">serieName : String</text>
+<text text-anchor="start" x="153.72" y="-13.1" font-family="Times,serif" font-size="14.00"> score : int</text>
+</g>
+<!-- Database&#45;&gt;PlayerScore -->
+<g id="edge1" class="edge">
+<title>Database-&gt;PlayerScore</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M231.35,-178.84C231.35,-178.84 231.35,-132.35 231.35,-132.35"/>
+<polygon fill="#595959" stroke="#595959" points="231.35,-122.35 235.85,-132.35 231.35,-126.14 231.35,-132.35 231.35,-132.35 231.35,-132.35 231.35,-126.14 226.85,-132.35 231.35,-122.35"/>
+<text text-anchor="middle" x="255.05" y="-148" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- FontLoader -->
+<g id="node2" class="node">
+<title>FontLoader</title>
+<polygon fill="none" stroke="black" points="480.25,-296.3 480.25,-370.7 634.44,-370.7 634.44,-296.3 480.25,-296.3"/>
+<text text-anchor="middle" x="557.35" y="-354.1" font-family="Times,serif" font-size="14.00">FontLoader</text>
+<polyline fill="none" stroke="black" points="480.25,-345.9 634.44,-345.9"/>
+<text text-anchor="start" x="488.25" y="-329.3" font-family="Times,serif" font-size="14.00">+ FontLoader() : </text>
+<polyline fill="none" stroke="black" points="480.25,-321.1 634.44,-321.1"/>
+<text text-anchor="start" x="488.25" y="-304.5" font-family="Times,serif" font-size="14.00">+ loadFont(Fonts) : Font</text>
+</g>
+<!-- FontManager -->
+<g id="node3" class="node">
+<title>FontManager</title>
+<polygon fill="none" stroke="black" points="652.91,-221.1 652.91,-445.9 991.78,-445.9 991.78,-221.1 652.91,-221.1"/>
+<text text-anchor="middle" x="822.35" y="-429.3" font-family="Times,serif" font-size="14.00">FontManager</text>
+<polyline fill="none" stroke="black" points="652.91,-421.1 991.78,-421.1"/>
+<text text-anchor="start" x="660.91" y="-404.5" font-family="Times,serif" font-size="14.00">+ FontManager() : </text>
+<polyline fill="none" stroke="black" points="652.91,-396.3 991.78,-396.3"/>
+<text text-anchor="start" x="660.91" y="-379.7" font-family="Times,serif" font-size="14.00">- buttonFont : Font</text>
+<text text-anchor="start" x="660.91" y="-362.9" font-family="Times,serif" font-size="14.00"> - titleFont : Font</text>
+<polyline fill="none" stroke="black" points="652.91,-354.7 991.78,-354.7"/>
+<text text-anchor="start" x="660.91" y="-338.1" font-family="Times,serif" font-size="14.00">+ getTitleFont(float) : Font</text>
+<text text-anchor="start" x="660.91" y="-321.3" font-family="Times,serif" font-size="14.00"> + loadCustomFont(Fonts) : void</text>
+<text text-anchor="start" x="660.91" y="-304.5" font-family="Times,serif" font-size="14.00"> + getAdjustedTitleFont(Component, float, float) : Font</text>
+<text text-anchor="start" x="660.91" y="-287.7" font-family="Times,serif" font-size="14.00"> + getAdjustedButtonFont(Component, float, float) : Font</text>
+<text text-anchor="start" x="660.91" y="-270.9" font-family="Times,serif" font-size="14.00"> + getButtonFont(float) : Font</text>
+<polyline fill="none" stroke="black" points="652.91,-262.7 991.78,-262.7"/>
+<text text-anchor="start" x="660.91" y="-246.1" font-family="Times,serif" font-size="14.00">buttonFont : Font</text>
+<text text-anchor="start" x="660.91" y="-229.3" font-family="Times,serif" font-size="14.00"> titleFont : Font</text>
+</g>
+<!-- Hexagon -->
+<g id="node4" class="node">
+<title>Hexagon</title>
+<polygon fill="none" stroke="black" points="1098.19,-0.5 1098.19,-125.3 1324.5,-125.3 1324.5,-0.5 1098.19,-0.5"/>
+<text text-anchor="middle" x="1211.35" y="-108.7" font-family="Times,serif" font-size="14.00">Hexagon</text>
+<polyline fill="none" stroke="black" points="1098.19,-100.5 1324.5,-100.5"/>
+<text text-anchor="start" x="1106.19" y="-83.9" font-family="Times,serif" font-size="14.00">+ Hexagon(int, int, int) : </text>
+<text text-anchor="start" x="1106.19" y="-67.1" font-family="Times,serif" font-size="14.00"> + Hexagon(Point, int) : </text>
+<text text-anchor="start" x="1106.19" y="-50.3" font-family="Times,serif" font-size="14.00"> + Hexagon(Point, int, double) : </text>
+<text text-anchor="start" x="1106.19" y="-33.5" font-family="Times,serif" font-size="14.00"> + Hexagon(int, int, int, double) : </text>
+<polyline fill="none" stroke="black" points="1098.19,-25.3 1324.5,-25.3"/>
+<text text-anchor="start" x="1106.19" y="-8.7" font-family="Times,serif" font-size="14.00">- calculateAngle(int, double) : double</text>
+</g>
+<!-- HexagonDrawer -->
+<g id="node5" class="node">
+<title>HexagonDrawer</title>
+<polygon fill="none" stroke="black" points="1010.11,-287.9 1010.11,-379.1 1412.59,-379.1 1412.59,-287.9 1010.11,-287.9"/>
+<text text-anchor="middle" x="1211.35" y="-362.5" font-family="Times,serif" font-size="14.00">HexagonDrawer</text>
+<polyline fill="none" stroke="black" points="1010.11,-354.3 1412.59,-354.3"/>
+<text text-anchor="start" x="1018.11" y="-337.7" font-family="Times,serif" font-size="14.00">+ HexagonDrawer(Tile) : </text>
+<polyline fill="none" stroke="black" points="1010.11,-329.5 1412.59,-329.5"/>
+<text text-anchor="start" x="1018.11" y="-312.9" font-family="Times,serif" font-size="14.00">+ drawHexagon(Graphics2D, double, Point) : void</text>
+<text text-anchor="start" x="1018.11" y="-296.1" font-family="Times,serif" font-size="14.00"> - drawHexagonRow(Graphics2D, double, double, double, int) : void</text>
+</g>
+<!-- HexagonDrawer&#45;&gt;Hexagon -->
+<g id="edge2" class="edge">
+<title>HexagonDrawer-&gt;Hexagon</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1211.35,-287.6C1211.35,-287.6 1211.35,-136.77 1211.35,-136.77"/>
+<polygon fill="#595959" stroke="#595959" points="1211.35,-126.77 1215.85,-136.77 1211.35,-130.55 1211.35,-136.77 1211.35,-136.77 1211.35,-136.77 1211.35,-130.55 1206.85,-136.77 1211.35,-126.77"/>
+<text text-anchor="middle" x="1235.05" y="-148" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- ImageLoader -->
+<g id="node6" class="node">
+<title>ImageLoader</title>
+<polygon fill="none" stroke="black" points="1430.29,-296.3 1430.29,-370.7 1612.4,-370.7 1612.4,-296.3 1430.29,-296.3"/>
+<text text-anchor="middle" x="1521.35" y="-354.1" font-family="Times,serif" font-size="14.00">ImageLoader</text>
+<polyline fill="none" stroke="black" points="1430.29,-345.9 1612.4,-345.9"/>
+<text text-anchor="start" x="1438.29" y="-329.3" font-family="Times,serif" font-size="14.00">+ ImageLoader() : </text>
+<polyline fill="none" stroke="black" points="1430.29,-321.1 1612.4,-321.1"/>
+<text text-anchor="start" x="1438.29" y="-304.5" font-family="Times,serif" font-size="14.00">+ loadImage(String) : Image?</text>
+</g>
+<!-- MusicPlayer -->
+<g id="node7" class="node">
+<title>MusicPlayer</title>
+<polygon fill="none" stroke="black" points="1630.07,-187.5 1630.07,-479.5 1812.62,-479.5 1812.62,-187.5 1630.07,-187.5"/>
+<text text-anchor="middle" x="1721.35" y="-462.9" font-family="Times,serif" font-size="14.00">MusicPlayer</text>
+<polyline fill="none" stroke="black" points="1630.07,-454.7 1812.62,-454.7"/>
+<text text-anchor="start" x="1638.07" y="-438.1" font-family="Times,serif" font-size="14.00">+ MusicPlayer() : </text>
+<polyline fill="none" stroke="black" points="1630.07,-429.9 1812.62,-429.9"/>
+<text text-anchor="start" x="1638.07" y="-413.3" font-family="Times,serif" font-size="14.00">- soundClip : Clip</text>
+<text text-anchor="start" x="1638.07" y="-396.5" font-family="Times,serif" font-size="14.00"> - musicClip : Clip</text>
+<polyline fill="none" stroke="black" points="1630.07,-388.3 1812.62,-388.3"/>
+<text text-anchor="start" x="1638.07" y="-371.7" font-family="Times,serif" font-size="14.00">+ loadMusic(Musics) : void</text>
+<text text-anchor="start" x="1638.07" y="-354.9" font-family="Times,serif" font-size="14.00"> + playSound() : void</text>
+<text text-anchor="start" x="1638.07" y="-338.1" font-family="Times,serif" font-size="14.00"> + pauseMusic() : void</text>
+<text text-anchor="start" x="1638.07" y="-321.3" font-family="Times,serif" font-size="14.00"> + loadSound(Sounds) : void</text>
+<text text-anchor="start" x="1638.07" y="-304.5" font-family="Times,serif" font-size="14.00"> + setVolume(Clip, int) : void</text>
+<text text-anchor="start" x="1638.07" y="-287.7" font-family="Times,serif" font-size="14.00"> + playMusic() : void</text>
+<text text-anchor="start" x="1638.07" y="-270.9" font-family="Times,serif" font-size="14.00"> + stopMusic() : void</text>
+<polyline fill="none" stroke="black" points="1630.07,-262.7 1812.62,-262.7"/>
+<text text-anchor="start" x="1638.07" y="-246.1" font-family="Times,serif" font-size="14.00">playingSound : boolean</text>
+<text text-anchor="start" x="1638.07" y="-229.3" font-family="Times,serif" font-size="14.00"> soundClip : Clip</text>
+<text text-anchor="start" x="1638.07" y="-212.5" font-family="Times,serif" font-size="14.00"> playingMusic : boolean</text>
+<text text-anchor="start" x="1638.07" y="-195.7" font-family="Times,serif" font-size="14.00"> musicClip : Clip</text>
+</g>
+<!-- SoundLoader -->
+<g id="node9" class="node">
+<title>SoundLoader</title>
+<polygon fill="none" stroke="black" points="1830.71,-296.3 1830.71,-370.7 2001.98,-370.7 2001.98,-296.3 1830.71,-296.3"/>
+<text text-anchor="middle" x="1916.35" y="-354.1" font-family="Times,serif" font-size="14.00">SoundLoader</text>
+<polyline fill="none" stroke="black" points="1830.71,-345.9 2001.98,-345.9"/>
+<text text-anchor="start" x="1838.71" y="-329.3" font-family="Times,serif" font-size="14.00">+ SoundLoader() : </text>
+<polyline fill="none" stroke="black" points="1830.71,-321.1 2001.98,-321.1"/>
+<text text-anchor="start" x="1838.71" y="-304.5" font-family="Times,serif" font-size="14.00">+ loadMusic(String) : Clip?</text>
+</g>
+</g>
+</svg>

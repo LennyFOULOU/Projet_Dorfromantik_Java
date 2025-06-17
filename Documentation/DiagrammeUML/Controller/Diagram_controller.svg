@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2086pt" height="362pt" viewBox="0.00 0.00 2085.80 362.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 358)">
+<title>package</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-358 2081.8,-358 2081.8,4 -4,4"/>
+<!-- ButtonHoverAnimationListener -->
+<g id="node1" class="node">
+<title>ButtonHoverAnimationListener</title>
+<polygon fill="none" stroke="black" points="0,-212.3 0,-286.7 392.91,-286.7 392.91,-212.3 0,-212.3"/>
+<text text-anchor="middle" x="196.46" y="-270.1" font-family="Times,serif" font-size="14.00">ButtonHoverAnimationListener</text>
+<polyline fill="none" stroke="black" points="0,-261.9 392.91,-261.9"/>
+<text text-anchor="start" x="8" y="-245.3" font-family="Times,serif" font-size="14.00">+ ButtonHoverAnimationListener(boolean, JButton, Color, Font) : </text>
+<polyline fill="none" stroke="black" points="0,-237.1 392.91,-237.1"/>
+<text text-anchor="start" x="8" y="-220.5" font-family="Times,serif" font-size="14.00">+ actionPerformed(ActionEvent) : void</text>
+</g>
+<!-- ButtonHoverListener -->
+<g id="node2" class="node">
+<title>ButtonHoverListener</title>
+<polygon fill="none" stroke="black" points="401.79,-0.5 401.79,-91.7 695.13,-91.7 695.13,-0.5 401.79,-0.5"/>
+<text text-anchor="middle" x="548.46" y="-75.1" font-family="Times,serif" font-size="14.00">ButtonHoverListener</text>
+<polyline fill="none" stroke="black" points="401.79,-66.9 695.13,-66.9"/>
+<text text-anchor="start" x="409.79" y="-50.3" font-family="Times,serif" font-size="14.00">+ ButtonHoverListener(ButtonHoverAnimator) : </text>
+<polyline fill="none" stroke="black" points="401.79,-42.1 695.13,-42.1"/>
+<text text-anchor="start" x="409.79" y="-25.5" font-family="Times,serif" font-size="14.00">+ mouseEntered(MouseEvent) : void</text>
+<text text-anchor="start" x="409.79" y="-8.7" font-family="Times,serif" font-size="14.00"> + mouseExited(MouseEvent) : void</text>
+</g>
+<!-- GameModeController -->
+<g id="node3" class="node">
+<title>GameModeController</title>
+<polygon fill="none" stroke="black" points="704.2,-145.5 704.2,-353.5 1034.72,-353.5 1034.72,-145.5 704.2,-145.5"/>
+<text text-anchor="middle" x="869.46" y="-336.9" font-family="Times,serif" font-size="14.00">GameModeController</text>
+<polyline fill="none" stroke="black" points="704.2,-328.7 1034.72,-328.7"/>
+<text text-anchor="start" x="712.2" y="-312.1" font-family="Times,serif" font-size="14.00">+ GameModeController(JFrame, MainMenu, JFrame) : </text>
+<polyline fill="none" stroke="black" points="704.2,-303.9 1034.72,-303.9"/>
+<text text-anchor="start" x="712.2" y="-287.3" font-family="Times,serif" font-size="14.00">- gameModeSelectionPanel : GameModeSelectionPanel</text>
+<polyline fill="none" stroke="black" points="704.2,-279.1 1034.72,-279.1"/>
+<text text-anchor="start" x="712.2" y="-262.5" font-family="Times,serif" font-size="14.00">- isDynamicSeries(String) : boolean</text>
+<text text-anchor="start" x="712.2" y="-245.7" font-family="Times,serif" font-size="14.00"> - addCustomSeedToDatabase(long) : void</text>
+<text text-anchor="start" x="712.2" y="-228.9" font-family="Times,serif" font-size="14.00"> - getSeedFromDatabaseByName(String) : long</text>
+<text text-anchor="start" x="712.2" y="-212.1" font-family="Times,serif" font-size="14.00"> + actionPerformed(ActionEvent) : void</text>
+<text text-anchor="start" x="712.2" y="-195.3" font-family="Times,serif" font-size="14.00"> - startGame(long) : void</text>
+<polyline fill="none" stroke="black" points="704.2,-187.1 1034.72,-187.1"/>
+<text text-anchor="start" x="712.2" y="-170.5" font-family="Times,serif" font-size="14.00">gameModeBoard : Board</text>
+<text text-anchor="start" x="712.2" y="-153.7" font-family="Times,serif" font-size="14.00"> gameModeSelectionPanel : GameModeSelectionPanel</text>
+</g>
+<!-- MainMenuButtonController -->
+<g id="node4" class="node">
+<title>MainMenuButtonController</title>
+<polygon fill="none" stroke="black" points="1053.18,-161.9 1053.18,-337.1 1513.73,-337.1 1513.73,-161.9 1053.18,-161.9"/>
+<text text-anchor="middle" x="1283.46" y="-320.5" font-family="Times,serif" font-size="14.00">MainMenuButtonController</text>
+<polyline fill="none" stroke="black" points="1053.18,-312.3 1513.73,-312.3"/>
+<text text-anchor="start" x="1061.18" y="-295.7" font-family="Times,serif" font-size="14.00">+ MainMenuButtonController(MainMenu, JFrame, JFrame, JFrame, JFrame) : </text>
+<polyline fill="none" stroke="black" points="1053.18,-287.5 1513.73,-287.5"/>
+<text text-anchor="start" x="1061.18" y="-270.9" font-family="Times,serif" font-size="14.00">- adjustFrameDisplay(JFrame) : void</text>
+<text text-anchor="start" x="1061.18" y="-254.1" font-family="Times,serif" font-size="14.00"> + actionPerformed(ActionEvent) : void</text>
+<text text-anchor="start" x="1061.18" y="-237.3" font-family="Times,serif" font-size="14.00"> - openSettings() : void</text>
+<text text-anchor="start" x="1061.18" y="-220.5" font-family="Times,serif" font-size="14.00"> + startNewGame() : void</text>
+<text text-anchor="start" x="1061.18" y="-203.7" font-family="Times,serif" font-size="14.00"> + showHowToPlay() : void</text>
+<text text-anchor="start" x="1061.18" y="-186.9" font-family="Times,serif" font-size="14.00"> - configureFrame(JFrame) : void</text>
+<text text-anchor="start" x="1061.18" y="-170.1" font-family="Times,serif" font-size="14.00"> - exitGame() : void</text>
+</g>
+<!-- MainMenuMouseController -->
+<g id="node5" class="node">
+<title>MainMenuMouseController</title>
+<polygon fill="none" stroke="black" points="411.11,-203.9 411.11,-295.1 685.81,-295.1 685.81,-203.9 411.11,-203.9"/>
+<text text-anchor="middle" x="548.46" y="-278.5" font-family="Times,serif" font-size="14.00">MainMenuMouseController</text>
+<polyline fill="none" stroke="black" points="411.11,-270.3 685.81,-270.3"/>
+<text text-anchor="start" x="419.11" y="-253.7" font-family="Times,serif" font-size="14.00">+ MainMenuMouseController(ButtonPanel) : </text>
+<polyline fill="none" stroke="black" points="411.11,-245.5 685.81,-245.5"/>
+<text text-anchor="start" x="419.11" y="-228.9" font-family="Times,serif" font-size="14.00">- initMouseListeners() : void</text>
+<text text-anchor="start" x="419.11" y="-212.1" font-family="Times,serif" font-size="14.00"> - addButtonHoverListener(JButton) : void</text>
+</g>
+<!-- MainMenuMouseController&#45;&gt;ButtonHoverListener -->
+<g id="edge1" class="edge">
+<title>MainMenuMouseController-&gt;ButtonHoverListener</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M548.46,-203.6C548.46,-203.6 548.46,-103.4 548.46,-103.4"/>
+<polygon fill="#595959" stroke="#595959" points="548.46,-93.4 552.96,-103.4 548.46,-97.19 548.46,-103.4 548.46,-103.4 548.46,-103.4 548.46,-97.19 543.96,-103.4 548.46,-93.4"/>
+<text text-anchor="middle" x="572.16" y="-114.4" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- MainMenuResizeController -->
+<g id="node6" class="node">
+<title>MainMenuResizeController</title>
+<polygon fill="none" stroke="black" points="1532.01,-212.3 1532.01,-286.7 1798.91,-286.7 1798.91,-212.3 1532.01,-212.3"/>
+<text text-anchor="middle" x="1665.46" y="-270.1" font-family="Times,serif" font-size="14.00">MainMenuResizeController</text>
+<polyline fill="none" stroke="black" points="1532.01,-261.9 1798.91,-261.9"/>
+<text text-anchor="start" x="1540.01" y="-245.3" font-family="Times,serif" font-size="14.00">+ MainMenuResizeController(MainMenu) : </text>
+<polyline fill="none" stroke="black" points="1532.01,-237.1 1798.91,-237.1"/>
+<text text-anchor="start" x="1540.01" y="-220.5" font-family="Times,serif" font-size="14.00">- addComponentListener() : void</text>
+</g>
+<!-- MainMenuResizeHandler -->
+<g id="node7" class="node">
+<title>MainMenuResizeHandler</title>
+<polygon fill="none" stroke="black" points="1526.95,-8.9 1526.95,-83.3 1803.96,-83.3 1803.96,-8.9 1526.95,-8.9"/>
+<text text-anchor="middle" x="1665.46" y="-66.7" font-family="Times,serif" font-size="14.00">MainMenuResizeHandler</text>
+<polyline fill="none" stroke="black" points="1526.95,-58.5 1803.96,-58.5"/>
+<text text-anchor="start" x="1534.95" y="-41.9" font-family="Times,serif" font-size="14.00">+ MainMenuResizeHandler(MainMenu) : </text>
+<polyline fill="none" stroke="black" points="1526.95,-33.7 1803.96,-33.7"/>
+<text text-anchor="start" x="1534.95" y="-17.1" font-family="Times,serif" font-size="14.00">+ componentResized(ComponentEvent) : void</text>
+</g>
+<!-- MainMenuResizeController&#45;&gt;MainMenuResizeHandler -->
+<g id="edge2" class="edge">
+<title>MainMenuResizeController-&gt;MainMenuResizeHandler</title>
+<path fill="none" stroke="#595959" d="M1620.97,-199.14C1620.97,-199.14 1620.97,-94.73 1620.97,-94.73"/>
+<polygon fill="#595959" stroke="#595959" points="1620.97,-199.29 1624.97,-205.29 1620.97,-211.29 1616.97,-205.29 1620.97,-199.29"/>
+<polygon fill="#595959" stroke="#595959" points="1620.97,-84.73 1625.47,-94.73 1620.97,-88.51 1620.97,-94.73 1620.97,-94.73 1620.97,-94.73 1620.97,-88.51 1616.47,-94.73 1620.97,-84.73"/>
+<text text-anchor="middle" x="1582.11" y="-104.51" font-family="Times,serif" font-size="14.00">resizeHandler</text>
+<text text-anchor="middle" x="1582.11" y="-87.71" font-family="Times,serif" font-size="14.00">1</text>
+<text text-anchor="middle" x="1617.47" y="-199.59" font-family="Times,serif" font-size="14.00">1</text>
+</g>
+<!-- MainMenuResizeController&#45;&gt;MainMenuResizeHandler -->
+<g id="edge3" class="edge">
+<title>MainMenuResizeController-&gt;MainMenuResizeHandler</title>
+<path fill="none" stroke="#595959" stroke-dasharray="5,2" d="M1709.94,-212.19C1709.94,-212.19 1709.94,-94.73 1709.94,-94.73"/>
+<polygon fill="#595959" stroke="#595959" points="1709.94,-84.73 1714.44,-94.73 1709.94,-88.51 1709.94,-94.73 1709.94,-94.73 1709.94,-94.73 1709.94,-88.51 1705.44,-94.73 1709.94,-84.73"/>
+<text text-anchor="middle" x="1705.16" y="-114.4" font-family="Times,serif" font-size="14.00">«create»</text>
+</g>
+<!-- TutorialController -->
+<g id="node8" class="node">
+<title>TutorialController</title>
+<polygon fill="none" stroke="black" points="1817.12,-199.9 1817.12,-299.1 2077.8,-299.1 2077.8,-199.9 1817.12,-199.9"/>
+<text text-anchor="middle" x="1947.46" y="-282.5" font-family="Times,serif" font-size="14.00">TutorialController</text>
+<polyline fill="none" stroke="black" points="1817.12,-274.3 2077.8,-274.3"/>
+<text text-anchor="start" x="1825.12" y="-257.7" font-family="Times,serif" font-size="14.00">+ TutorialController(MainMenu, JFrame) : </text>
+<polyline fill="none" stroke="black" points="1817.12,-249.5 2077.8,-249.5"/>
+<text text-anchor="start" x="1825.12" y="-232.9" font-family="Times,serif" font-size="14.00">- tutorialPanel : TutorialPanel</text>
+<polyline fill="none" stroke="black" points="1817.12,-224.7 2077.8,-224.7"/>
+<text text-anchor="start" x="1825.12" y="-208.1" font-family="Times,serif" font-size="14.00">tutorialPanel : JPanel</text>
+</g>
+</g>
+</svg>
